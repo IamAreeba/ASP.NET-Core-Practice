@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34518.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Core WebAppMVC", "ASP.NET Core WebAppMVC\ASP.NET Core WebAppMVC.csproj", "{4084222A-2524-49A4-8E3C-B39056DF9675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Core WebApp Empty", "ASP.NET Core WebApp Empty\ASP.NET Core WebApp Empty.csproj", "{8E35E443-FAD3-40C6-A67E-1041ADAE1012}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{976D88B7-BAC0-42A0-8D72-FB98B0B6CFFC}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.aspx = Notes.aspx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4084222A-2524-49A4-8E3C-B39056DF9675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4084222A-2524-49A4-8E3C-B39056DF9675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4084222A-2524-49A4-8E3C-B39056DF9675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4084222A-2524-49A4-8E3C-B39056DF9675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E35E443-FAD3-40C6-A67E-1041ADAE1012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E35E443-FAD3-40C6-A67E-1041ADAE1012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E35E443-FAD3-40C6-A67E-1041ADAE1012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E35E443-FAD3-40C6-A67E-1041ADAE1012}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03A8ED6E-7744-4DBF-B0AD-0CF2460E46D7}
+	EndGlobalSection
+EndGlobal
