@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34518.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPCoreMiddlewares", "ASPCoreMiddlewares\ASPCoreMiddlewares.csproj", "{66C2B6DE-11E6-41D8-B2A3-1D378CA5CBCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{34F8DFD9-20DF-4002-8897-EF6AB6759316}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.aspx = Notes.aspx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66C2B6DE-11E6-41D8-B2A3-1D378CA5CBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C2B6DE-11E6-41D8-B2A3-1D378CA5CBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C2B6DE-11E6-41D8-B2A3-1D378CA5CBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C2B6DE-11E6-41D8-B2A3-1D378CA5CBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57567724-F207-4F28-B2B0-8148D7D404AA}
+	EndGlobalSection
+EndGlobal
