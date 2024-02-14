@@ -3,14 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34518.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingWithMVC", "RoutingWithMVC\RoutingWithMVC.csproj", "{A9EC2ED3-BC37-4AE8-95CF-91239AE4959D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoutingWithMVC", "RoutingWithMVC\RoutingWithMVC.csproj", "{A9EC2ED3-BC37-4AE8-95CF-91239AE4959D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1AC0FAA7-4A98-4181-863E-2AD3C775A604}"
 	ProjectSection(SolutionItems) = preProject
 		Notes.js = Notes.js
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingWithoutMVC", "RoutingWithoutMVC\RoutingWithoutMVC.csproj", "{8F0FDB33-80F5-44C5-96D6-A2B0A938CFC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoutingWithoutMVC", "RoutingWithoutMVC\RoutingWithoutMVC.csproj", "{8F0FDB33-80F5-44C5-96D6-A2B0A938CFC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attribute Routing", "Attribute Routing\Attribute Routing.csproj", "{DD2C18D1-E536-4AE9-BDD6-A0C96A07C03C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{8F0FDB33-80F5-44C5-96D6-A2B0A938CFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F0FDB33-80F5-44C5-96D6-A2B0A938CFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F0FDB33-80F5-44C5-96D6-A2B0A938CFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2C18D1-E536-4AE9-BDD6-A0C96A07C03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2C18D1-E536-4AE9-BDD6-A0C96A07C03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2C18D1-E536-4AE9-BDD6-A0C96A07C03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2C18D1-E536-4AE9-BDD6-A0C96A07C03C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

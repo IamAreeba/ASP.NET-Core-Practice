@@ -202,3 +202,24 @@ ATTRIBUTE BASED ROUTING : For Normal + API web app
 
 
 
+// ====================================== 10 ====================================== //
+/*
+   We use Route ttribute in this
+   Make id optional using ?
+   We can make the param (id) nullable by using ? 
+    e.g. int? id
+   ?? : null collase operator. So iid id has any value so that value will be displayed other wise
+        using ?? operator we can display anything if id has null
+        e.g. return id ?? 1
+
+   If we use Home controller we dont have to write Home KW again and again
+   But when app loads 1st time it doesnt have any KW so nothing will be displayed so we have
+   to add ("~/") to display what u want to be displayed
+
+   We can pass tokens in place of controller and action method like [controller]/[action]
+   Benefit of Token: We dont have to use name of controller and action()
+   If i am typing in URL a route which is not in my app so default convention based routing 
+   will be used
+
+    
+*/

@@ -19,7 +19,7 @@ var app = builder.Build();
 
 
 // 2
-// This is our routr tempelate
+// This is our router tempelate
 app.MapControllerRoute(
     name: "default",
     //pattern: "{controller=Home}/{action=Index}/{id?}",
@@ -28,6 +28,9 @@ app.MapControllerRoute(
 
     );
 
+//3
+// Attribute Based Routing
+app.MapControllers();
 
 
 app.Run();
