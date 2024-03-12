@@ -4,4 +4,55 @@
 }
 
 <h1>Index</h1>
+<h1>Current Date and Time is @DateTime.Now</h1>
+<h1>Current Year is @DateTime.Now.Year</h1>
+
+
+@{
+    var name = "Areeba Channel";
+    var age = 20;
+
+}
+
+<h2>Name = @name</h2>
+<h2>Age = @age</h2>
+
+
+
+@*  Conditional Statement *@
+@{
+    var myName = "Arweeba";
+    if (myName.Equals("Areeba"))
+    {
+        <h3>Hey Areeba</h3>
+    }
+    else
+    {
+        <h3>By Areeba</h3>
+    }
+}
+
+
+
+@*  Loops  *@
+@{
+    for (int i = 0; i < 10; i++)
+    {
+        <h2>@(i + 1)</h2>
+    }
+}
+
+
+
+@*  ForEach Loops  *@
+@*  To use ForEach Loops we must have an array *@
+
+@{
+    string[] names = { "Areeba", "Aiman", "Ali" };
+    foreach (var item in names)
+    {
+        <h3>@item</h3>
+    }
+}
+
 

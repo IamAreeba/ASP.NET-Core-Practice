@@ -34,3 +34,14 @@
  */
 
 
+
+// ==================================  14 =================================
+/*
+ * Conversion of Views is done by Razor Engine
+ * It compiles our application cuz it contain HTML and C# code
+ * MVC View is also called Razor View cuz Razor syntax is used 
+ * All the Razor work we do in View
+ * For inline cs dont use ; but for multiple code blocks use ;
+ * Razor View Engine is converting csHTML to HTML on browser 
+ * 
+ */
