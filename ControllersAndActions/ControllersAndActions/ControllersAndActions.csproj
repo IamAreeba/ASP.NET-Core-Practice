@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Notes\Notes.aspx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Notes\Notes.aspx" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
   </ItemGroup>
 
 </Project>
