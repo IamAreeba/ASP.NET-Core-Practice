@@ -9,6 +9,22 @@ namespace ControllersAndActions.Controllers
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
         }
 
+
+        public IActionResult About()
+        {
+            return View();   // ViewResult, PartialViewResult, JsonResult etc 
+        }
+
+
+
+        public IActionResult Contact()
+        {
+            return View();   // ViewResult, PartialViewResult, JsonResult etc 
+        }
+
+
+
+
         public String Display()
         {
             return "Hello Its Areeba";

@@ -45,3 +45,11 @@
  * Razor View Engine is converting csHTML to HTML on browser 
  * 
  */
+
+// ==================================  15 =================================
+/*
+ * Master page is our Layout page is our parent and Index, About views is child of Master page
+ * With Layout property we can connect Master Page with Views
+ * @RenderBody() is pointing to our child data 
+ * 
+ */
