@@ -20,7 +20,7 @@ namespace ControllersAndActions.Controllers
         public IActionResult Contact()
         {
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
-        }
+        }   
 
 
 

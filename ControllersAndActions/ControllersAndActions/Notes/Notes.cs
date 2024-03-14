@@ -53,3 +53,9 @@
  * @RenderBody() is pointing to our child data 
  * 
  */
+
+// ==================================  16 =================================
+/*
+ * If we dont waant to attach any file we can use null value in Layout cuz our app will give priority to this Layout rather then ViewStart File
+ * 
+ */
