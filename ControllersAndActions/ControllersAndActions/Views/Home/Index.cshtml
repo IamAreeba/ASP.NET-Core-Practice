@@ -63,3 +63,33 @@
 } *@
 
  
+
+
+@* ==================== ViewData ================ *@
+@ViewData["Data1"]
+<br />
+@ViewData["Data2"]
+<br />
+@ViewData["Data3"]
+
+@* To access arrray or collection we use for each loop 
+    ViewData["Data4"] is throwing error we have to typecast it cuz he is not recognizing which DT is it
+*@
+
+
+@{
+    foreach (var item in (string[])ViewData["Data4"])
+    {
+        <h2>@item</h2>
+    }
+}
+
+@{
+    foreach (var item in (List<String>)ViewData["Data5"])
+    {
+        <h2>@item</h2>
+    }
+}
+
+
+

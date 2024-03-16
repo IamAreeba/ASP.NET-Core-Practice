@@ -6,6 +6,24 @@ namespace ControllersAndActions.Controllers
     {
         public IActionResult Index()
         {
+            // ========================= ViewData Concept ======================
+            // Single DT
+            ViewData["Data1"] = "Areeba Amjad";
+            ViewData["Data2"] = "Studying At UBIT";
+            ViewData["Data3"] = DateTime.Now.ToLongDateString(); // In it month name will be displayed
+
+            // Arrays Collection
+            string[] Array = { "Areeba", "Aiman", "Ali" };
+            ViewData["Data4"] = Array;
+
+            // Generic List
+            ViewData["Data5"] = new List<String>()
+            {
+                "Cricket", "Football"
+            };  
+
+
+
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
         }
 
@@ -21,8 +39,6 @@ namespace ControllersAndActions.Controllers
         {
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
         }   
-
-
 
 
         public String Display()

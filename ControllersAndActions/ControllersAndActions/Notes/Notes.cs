@@ -59,3 +59,22 @@
  * If we dont waant to attach any file we can use null value in Layout cuz our app will give priority to this Layout rather then ViewStart File
  * 
  */
+
+// ==================================  17 =================================
+/*
+ * If we dont waant to attach any file we can use null value in Layout cuz our app will give priority to this Layout rather then ViewStart File
+ * When we do any CRUD operation in our app so after performing that we have popupin our app saying e.g. Deleted Successfully. So this is shown us inside our view but the logic of this deletion is written inside controlller so how it is comming inside View ?
+ * 
+ * Basically data is generated in action methods and passed to the view. But thes methods are inside controller thats why is is said that passing data from Controller to View
+ * 
+ * We can also write if else logic in ViewData
+ * If we have to pass Data from 1 Action Method to another ? 
+ * Its value becomes null in case if u are using ViewData[]
+ * ViewData["Data"] is basically mine obj and i am typecasting that obj
+ * We can work with diff DT by using ViewData[]. It is collection of objs
+ * If we misspel Key of ViewData[] it wont give erroe at compile time 
+ * 
+ * 
+ * 
+ * 
+ */
