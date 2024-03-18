@@ -6,23 +6,23 @@ namespace ControllersAndActions.Controllers
     {
         public IActionResult Index()
         {
-            // ========================= ViewData Concept ======================
-            // Single DT
-            ViewData["Data1"] = "Areeba Amjad";
-            ViewData["Data2"] = "Studying At UBIT";
-            ViewData["Data3"] = DateTime.Now.ToLongDateString(); // In it month name will be displayed
 
-            // Arrays Collection
-            string[] Array = { "Areeba", "Aiman", "Ali" };
-            ViewData["Data4"] = Array;
+            // ======================== ViewBag.<> Concept ====================
+            ViewBag.Data1 = "Areeba Amjad";
+            ViewBag.Data2 = 12345;
+            ViewBag.Data3 = DateTime.Now.ToShortDateString();
 
-            // Generic List
-            ViewData["Data5"] = new List<String>()
+            ViewData["MyFamily"] = "Latif family";
+            ViewBag.Data6 = "Welcome";
+
+
+            string[] Array1 = { "Shazia", "Shaheryar", "Amjad", "Haseeb" };
+            ViewBag.Data4 = Array1;
+
+            ViewBag.Data5 = new List<string>()
             {
-                "Cricket", "Football"
-            };  
-
-
+                "Harry Potter", "X-Men", "Twilight"
+            };
 
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
         }
@@ -38,7 +38,9 @@ namespace ControllersAndActions.Controllers
         public IActionResult Contact()
         {
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
-        }   
+        }
+
+
 
 
         public String Display()
@@ -82,3 +84,22 @@ namespace ControllersAndActions.Controllers
         }
     }
 }
+
+/* 
+    // ======================== ViewData[] Concept ====================
+    // Single DT
+    ViewData["Data1"] = "Areeba Amjad";
+    ViewData["Data2"] = "Studying At UBIT";
+    ViewData["Data3"] = DateTime.Now.ToLongDateString(); // In it month name will be displayed
+
+    // Arrays Collection
+    string[] Array = { "Areeba", "Aiman", "Ali" };
+    ViewData["Data4"] = Array;
+
+    // Generic List
+    ViewData["Data5"] = new List<String>()
+    {
+        "Cricket", "Football"
+    };  
+
+ */

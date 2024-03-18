@@ -74,7 +74,15 @@
  * We can work with diff DT by using ViewData[]. It is collection of objs
  * If we misspel Key of ViewData[] it wont give erroe at compile time 
  * 
- * 
- * 
+ */
+
+// ==================================  18 =================================
+/*
+ * In this ViewBag.Data this Data is a dynamic property means we can write data of any type on R.H.S
+ * and whatever data is stored in ViewBag.Data will  be checked on runtime
+ * In ViewBag.Data case we dont have to worry about type casting and its the main diff btw ViewBag.Data and ViewBag[Data]
+ *  We can use ViewBag.Data and ViewData[Data] interchangablly
+ *  Dynamic DT: DT which is checked at the runtime
+ *  
  * 
  */

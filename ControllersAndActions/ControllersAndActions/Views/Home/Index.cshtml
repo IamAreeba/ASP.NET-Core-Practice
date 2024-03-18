@@ -1,15 +1,20 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     // Layout = "~/Views/Shared/_Layout.cshtml";
     Layout = "~/Views/Shared/_Layout1.cshtml";
     Layout = null;
 }
 
+
+
 <h1>Index</h1>
 <p>This is my Home Page</p>
 
- 
+
+@* ======================== ViewData[] Concept ====================   *@
+
+
+
 @* <h1>Current Date and Time is @DateTime.Now</h1>
 <h1>Current Year is @DateTime.Now.Year</h1>
 
@@ -53,7 +58,7 @@
 
 @*  ForEach Loops  *@
 @*  To use ForEach Loops we must have an array *@
-@* 
+@*
 @{
     string[] names = { "Areeba", "Aiman", "Ali" };
     foreach (var item in names)
@@ -62,34 +67,72 @@
     }
 } *@
 
- 
+
 
 
 @* ==================== ViewData ================ *@
-@ViewData["Data1"]
+
+@* @ViewData["Data1"]
 <br />
 @ViewData["Data2"]
 <br />
-@ViewData["Data3"]
+@ViewData["Data3"] *@
 
-@* To access arrray or collection we use for each loop 
+@* To access arrray or collection we use for each loop
     ViewData["Data4"] is throwing error we have to typecast it cuz he is not recognizing which DT is it
 *@
 
 
 @{
-    foreach (var item in (string[])ViewData["Data4"])
+    // foreach (var item in (string[])ViewData["Data4"])
+    // {
+    //     <h2>@item</h2>
+    // }
+}
+
+@{
+    // foreach (var item in (List<String>)ViewData["Data5"])
+    // {
+    //     <h2>@item</h2>
+    // }
+}
+
+
+@* ======================== ViewData[] Concept ====================   *@
+
+
+
+@* ======================== ViewBag.<> Concept ====================   *@
+
+
+@* Accessing View[Data] property through ViewBag.Data in our View *@
+<h4>Accessing View[Data] property through ViewBag : @ViewBag.MyFamily</h4>
+
+
+@* Accessing ViewBag property through View[Data].Data in our View *@
+<h4>Accessing ViewBag property through View[Data]: @ViewData["Data6"]</h4>
+
+
+@ViewBag.Data1
+<br />
+@ViewBag.Data2
+<br />
+@ViewBag.Data3
+<br />
+
+
+
+@{
+    foreach (var item in ViewBag.Data4)
     {
         <h2>@item</h2>
     }
 }
 
 @{
-    foreach (var item in (List<String>)ViewData["Data5"])
+    foreach (var item in ViewBag.Data5)
     {
         <h2>@item</h2>
     }
 }
-
-
 
