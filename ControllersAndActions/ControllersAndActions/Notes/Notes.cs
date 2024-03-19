@@ -86,3 +86,13 @@
  *  
  * 
  */
+
+// ==================================  19 =================================
+/*
+ * We can only access TempData in any View and it is 1 time accessible
+ * e.g. Deleted Successfully messages are shown using TempData
+ * But if we have to keep that TempData and use it in multiple pages we can use keep method. 
+ * But it is a redundant code we can use sessions instead keep()
+ * 
+ * 
+ */

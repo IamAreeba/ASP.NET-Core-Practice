@@ -6,23 +6,20 @@ namespace ControllersAndActions.Controllers
     {
         public IActionResult Index()
         {
-
             // ======================== ViewBag.<> Concept ====================
-            ViewBag.Data1 = "Areeba Amjad";
-            ViewBag.Data2 = 12345;
-            ViewBag.Data3 = DateTime.Now.ToShortDateString();
+            ViewData["Data1"] = "ViewData";
+            ViewBag.Data2 = "ViewBag";
+            TempData["Data3"] = "TempData";
 
-            ViewData["MyFamily"] = "Latif family";
-            ViewBag.Data6 = "Welcome";
-
-
-            string[] Array1 = { "Shazia", "Shaheryar", "Amjad", "Haseeb" };
-            ViewBag.Data4 = Array1;
-
-            ViewBag.Data5 = new List<string>()
+            TempData["Data4"] = new List<string>()
             {
-                "Harry Potter", "X-Men", "Twilight"
+                "ZacStorm ", "Doremon ", "Bheem "
             };
+
+
+            TempData["Data5"] = null;
+            TempData.Keep();
+
 
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
         }
@@ -30,6 +27,7 @@ namespace ControllersAndActions.Controllers
 
         public IActionResult About()
         {
+            TempData.Keep();
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
         }
 
@@ -37,11 +35,9 @@ namespace ControllersAndActions.Controllers
 
         public IActionResult Contact()
         {
+            TempData.Keep("Data3");
             return View();   // ViewResult, PartialViewResult, JsonResult etc 
         }
-
-
-
 
         public String Display()
         {
@@ -85,8 +81,9 @@ namespace ControllersAndActions.Controllers
     }
 }
 
+
+// ======================== ViewData[] Concept ====================
 /* 
-    // ======================== ViewData[] Concept ====================
     // Single DT
     ViewData["Data1"] = "Areeba Amjad";
     ViewData["Data2"] = "Studying At UBIT";
@@ -102,4 +99,26 @@ namespace ControllersAndActions.Controllers
         "Cricket", "Football"
     };  
 
- */
+*/
+
+
+
+
+// ======================== ViewBag.<> Concept ====================
+/*
+    ViewBag.Data1 = "Areeba Amjad";
+    ViewBag.Data2 = 12345;
+    ViewBag.Data3 = DateTime.Now.ToShortDateString();
+
+    ViewData["MyFamily"] = "Latif family";
+    ViewBag.Data6 = "Welcome";
+
+
+    string[] Array1 = { "Shazia", "Shaheryar", "Amjad", "Haseeb" };
+    ViewBag.Data4 = Array1;
+
+    ViewBag.Data5 = new List<string>()
+    {
+        "Harry Potter", "X-Men", "Twilight"
+    }; 
+*/
