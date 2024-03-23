@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var students = ViewData["myStudents"] as List<StudentModel>;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background-color: gray;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: LightGray
+}
+
+</style>
+
+
+<table>
+    <tr>
+        <th> ROLLNO </th>
+        <th> NAME </th>
+        <th> GENDER </th>
+        <th> CLASS </th>
+    </tr>
+
+
+    @foreach (var std in students)
+    {
+        <tr>
+            <td> @std.rollNo </td>
+            <td> @std.Name </td>
+            <td> @std.Gender </td>
+            <td> @std.Standard </td>
+        </tr>
+
+    }
+
+</table>
