@@ -1,15 +1,11 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-    var students = ViewData["myStudents"] as List<StudentModel>;
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@{
+    var students = ViewData["myAllStudents"] as List<StudentModel>;
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-
-
-
 
 
 <style>
@@ -57,3 +53,4 @@ td {
     }
 
 </table>
+ 
