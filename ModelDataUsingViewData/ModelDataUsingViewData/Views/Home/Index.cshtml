@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    //  ================ For Single Employee ==================
+    // var empViewData = ViewData["myEmployeeByViewData"] as Employee;
+    // var empViewBag = ViewBag.myEmployeeByViewBag;
+    // var empTempData = TempData["myEmployeeByTempData"] as Employee;
+
+    // ================== For Multiple Employees =================
+    // var empsViewData = ViewData["myEmployeeByViewData"] as List<Employee>;
+    // var empsViewBag = ViewBag.myEmployeeByViewBag;
+    var empsTempData = TempData["myEmployeeByTempData"] as List<Employee>;
+
+
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* ================================= For Single Employee ================================ *@
+
+@* ============================= ViewData ========================== *@
+@* @{
+    if (empViewData != null)
+    {
+        <h1> Displaying Using ViewData </h1>
+        <h5>Id: @empViewData.Id</h5>
+        <h5>Name: @empViewData.Name</h5>
+        <h5>Designation: @empViewData.Designation</h5>
+        <h5>Salary: @empViewData.Salary</h5>
+    }
+} *@
+
+<br />
+
+
+@* ====================== ViewBag ===================== *@
+@* @{
+    if (empViewBag != null)
+    {
+        <h1> Displaying Using ViewBag </h1>
+        <h5>Id: @empViewBag.Id</h5>
+        <h5>Name: @empViewBag.Name</h5>
+        <h5>Designation: @empViewBag.Designation</h5>
+        <h5>Salary: @empViewBag.Salary</h5>
+    }
+} *@
+
+<br />
+
+
+
+@* ====================== TempData ===================== *@
+@* @{
+    if (empTempData != null)
+    {
+        <h1> Displaying Using TempData </h1>
+        <h5>Id: @empTempData.Id</h5>
+        <h5>Name: @empTempData.Name</h5>
+        <h5>Designation: @empTempData.Designation</h5>
+        <h5>Salary: @empTempData.Salary</h5>
+    }
+} *@
+
+
+@* ================================= For Single Employee ================================ *@
+
+
+
+
+
+@* ================================= For Multiple Employees ================================ *@
+
+@* @{
+    if(empsViewData != null)
+    {
+        <h1> Displaying Using ViewData </h1>
+        foreach (var item in empsViewData)
+        {
+            <h2> =================================================== </h2>
+            <h5>Id: @item.Id</h5>
+            <h5>Name: @item.Name</h5>
+            <h5>Designation: @item.Designation</h5>
+            <h5>Salary: @item.Salary</h5>
+            <h2> =================================================== </h2>
+        }
+    }
+} *@
+
+
+<br />
+
+@* @{
+    if (empsViewBag != null)
+    {
+        <h1> Displaying Using ViewBag </h1>
+        foreach (var item in empsViewBag)
+        {
+            <h2> =================================================== </h2>
+            <h5>Id: @item.Id</h5>
+            <h5>Name: @item.Name</h5>
+            <h5>Designation: @item.Designation</h5>
+            <h5>Salary: @item.Salary</h5>
+            <h2> =================================================== </h2>
+        }
+    }
+} *@
+
+
+<br />
+
+
+
+@{
+    if (empsTempData != null)
+    {
+        <h1> Displaying Using TempData </h1>
+        foreach (var item in empsTempData)
+        {
+            <h2> =================================================== </h2>
+            <h5>Id: @item.Id</h5>
+            <h5>Name: @item.Name</h5>
+            <h5>Designation: @item.Designation</h5>
+            <h5>Salary: @item.Salary</h5>
+            <h2> =================================================== </h2>
+        }
+    }
+}
+
+@* ================================= For Multiple Employees ================================ *@
