@@ -1,0 +1,43 @@
+﻿@* Binding with Employee Model class *@
+@* @model Employee *@
+
+@model IEnumerable<StronglyTypedViewASPCore.Models.Employee>
+
+@* @model List<StronglyTypedViewASPCore.Models.Employee> *@
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@* For Single Obj *@
+@*
+
+<h2>@Model.Id</h2>
+<h2>@Model.Name</h2>
+<h2>@Model.Designation</h2>
+<h2>@Model.Salary</h2> 
+
+*@
+
+
+
+
+@* For Multiple Obj *@
+@{
+    foreach (var item in Model)
+    {
+        <h2>@item.Id</h2>
+        <h2>@item.Name</h2>
+        <h2>@item.Designation</h2>
+        <h2>@item.Salary</h2>
+        <p> ========================== </p>
+
+    }
+}
