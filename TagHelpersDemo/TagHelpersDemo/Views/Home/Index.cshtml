@@ -31,18 +31,44 @@
 
 @* Specifying Ids *@
 
-<a href="/Home/Contact/1"> Edit Page 01 </a>
+@{
+    /*
+    
+        <a href="/Home/Contact/1"> Edit Page 01 </a>
+
+        <br />
+
+        @* (Text, ActionMethod, Controller) *@
+        @Html.ActionLink("Edit Page 02", "Contact", "Home", new { id = 2 })
+
+        <br />
+
+        @* (ActionMethod, Controller) *@
+        <a href="@Url.Action("Contact", "Home", new {id = 3}) "> Edit Page 03  </a>
+
+        <br />
+
+        <a asp-controller="Home" , asp-action="Contact" , asp-route-id="4"> Edit Page 04 </a>
+
+    */
+
+}
+
+
+
+<a href="/Home/Contact"> Contact Page 01 </a>
+
+<br />
+
+<a asp-controller="Home" , asp-action="Contact"> Contact Page 02 </a>
 
 <br />
 
 @* (Text, ActionMethod, Controller) *@
-@Html.ActionLink("Edit Page 02", "Contact", "Home", new { id = 2 })
+@Html.ActionLink("Contact Page 03", "Contact", "Home")
 
 <br />
 
 @* (ActionMethod, Controller) *@
-<a href="@Url.Action("Contact", "Home", new {id = 3}) "> Edit Page 03  </a>
+<a href="@Url.Action("Contact", "Home") "> Contact Page 04 </a>
 
-<br />
-
-<a asp-controller="Home" , asp-action="Contact", asp-route-id="4" > Edit Page 04 </a>

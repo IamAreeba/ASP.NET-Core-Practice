@@ -15,3 +15,16 @@
  *  
  * 
  */
+
+
+
+// ========================== 27 ============================
+/*  
+ *  If we want the Organization name in our Convention based Routing we can just simply write that.
+ *  But then our Index method wont run cuz convention is changed. So we have to use Attribute Routing on that
+ *  But the changes which we have applied will not be update on Simple HTML Tag but will be updated on the HTML Tag helper
+ * Also HTML Helper tags are also updated only simple HTML Tag is not updated
+ * 
+ * But use only Tag Helper cuz it belongs to .NET Core Framework
+ * 
+ */
